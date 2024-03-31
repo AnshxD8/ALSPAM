@@ -43,7 +43,7 @@ async def start(event):
         )
         await event.client.send_file(
                     event.chat_id,
-                    "https://graph.org/file/ab4cd596e018d4bc5be22.jpg6009389784",
+                    "https://graph.org/file/ab4cd596e018d4bc5be22.jpg",
                     caption=TEXT, 
                     buttons=START_BUTTON
                 )

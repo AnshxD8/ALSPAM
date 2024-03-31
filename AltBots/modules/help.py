@@ -1,4 +1,4 @@
-from telethon import events, Button
+nu from telethon import events, Button
 
 from config import X1, X2, X3, X4, X5, X6, X7, X8, X9, X10, SUDO_USERS, CMD_HNDLR as hl
 
@@ -34,7 +34,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
         try:
           await event.client.send_file(event.chat_id,
-              "https://te.legra.ph/file/7bc5551374ee010ba57d2.jpg",
+              "https://graph.org/file/3112ad158262a699763d1.jpg",
               caption=HELP_STRING,
               buttons=HELP_BUTTON
               )
@@ -60,7 +60,7 @@ extra_msg = f"""
   2) {hl}𝚕𝚎𝚊𝚟𝚎 : 𝚃𝚢𝚙𝚎 𝚒𝚗 𝚝𝚑𝚛 𝙶𝚛𝚘𝚞𝚘 𝚋𝚘𝚝 𝚠𝚒𝚕𝚕 𝚊𝚞𝚝𝚘 𝚕𝚎𝚊𝚟𝚎 𝚝𝚑𝚊𝚝 𝚐𝚛𝚘𝚞𝚙 
 
 
-**© @PRADHAN474**
+**© @ansh_xd8**
 """
 
                  
@@ -92,7 +92,7 @@ raid_msg = f"""
   2) {hl}𝚌𝚛𝚊𝚒𝚍 <𝚌𝚘𝚞𝚗𝚝> <𝚛𝚎𝚙𝚕𝚢 𝚝𝚘 𝚞𝚜𝚎𝚛>
 
 
-**© @PRADHAN474**💘
+**© @ansh_xd8**💘
 """
 
 spam_msg = f"""
@@ -136,13 +136,13 @@ async def helpback(event):
                 Button.inline("𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗦", data="extra")
               ],
               [
-                Button.url("𝗢𝗫𝗬𝗚𝗘𝗡", "https://t.me/PRADHAN474"),
-                Button.url("𝗠𝗬 𝗚𝗥𝗢𝗨𝗣", "https://t.me/BWANDARLOK")
+                Button.url("𝐀ηѕн", "https://t.me/ANSH_XD8"),
+                Button.url("𝐌𝐘 𝐆𝐑𝐎𝐔𝐏", "https://t.me/THE_CASTLESS")
               ]
             ]
           )
     else:
-        await event.answer("𝙾𝚇𝚈𝙶𝙴𝙽 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾  @PRADHAN474" , cache_time=0, alert=True)
+        await event.answer("𝙾𝚇𝚈𝙶𝙴𝙽 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾  @ansh_xd8" , cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"spam"))
@@ -161,7 +161,7 @@ async def help_spam(event):
               buttons=[[Button.inline("< Back", data="help_back"),],],
               ) 
     else:
-        await event.answer("𝙾𝚇𝚈𝙶𝙴𝙽 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @PRADHAN474 💖", cache_time=0, alert=True)
+        await event.answer("𝐀ηѕн 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @ansh_xd8 💖", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"raid"))
@@ -180,7 +180,7 @@ async def help_raid(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
           )
     else:
-        await event.answer("𝙾𝚇𝚈𝙶𝙴𝙽 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @PRADHAN474 💖", cache_time=0, alert=True)
+        await event.answer("𝐀ηѕн 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @ansh_xd8 💖", cache_time=0, alert=True)
 
 
 @X1.on(events.CallbackQuery(pattern=r"extra"))
@@ -199,4 +199,4 @@ async def help_extra(event):
             buttons=[[Button.inline("< Back", data="help_back"),],],
             )
     else:
-        await event.answer("𝙾𝚇𝚈𝙶𝙴𝙽 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @PRADHAN474 💖", cache_time=0, alert=True)
+        await event.answer("𝐀ηѕн 𝚂𝙴 𝙹𝙰 𝙺𝙴 𝚂𝚄𝙳𝙾 𝙻𝙴𝙻𝙾 @ansh_xd8 💖", cache_time=0, alert=True)
